@@ -1,11 +1,15 @@
 const path = require("path")
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js'
+        filename: 'wavesurfer-async.js',
+        library: 'wavesurfer-async',
+        libraryTarget: 'umd',
+        libraryExport: 'default',
+        globalObject: 'this',
     },
 
     module: {

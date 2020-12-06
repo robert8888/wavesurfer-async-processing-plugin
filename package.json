@@ -1,8 +1,9 @@
 {
   "name": "wavesurfer.js-async",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WaveSurfer computing peeks asynchronously",
-  "main": "dist/index.js",
+  "main": "dist/wavesurfer-async.js",
+  "module": "src/index.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
