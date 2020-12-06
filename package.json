@@ -3,7 +3,6 @@
   "version": "1.0.3",
   "description": "WaveSurfer computing peeks asynchronously",
   "main": "dist/wavesurfer-async.js",
-  "module": "src/index.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
