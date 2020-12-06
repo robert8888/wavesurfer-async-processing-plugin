@@ -2,14 +2,14 @@ import drawBuffer from "./wsModifcations/drawBuffer";
 import getPeaksAsync from "./wsModifcations/getPeaks";
 import loadDecodedBuffer from "./wsModifcations/loadDecodedBuffer";
 
-export default class PeaksPromisficationPlugin {
+export default class PeaksAsyncPlugin {
     static create(params) {
         return {
-            name: 'PeaksPromisfication',
+            name: 'PeaksAsyncPlugin',
             deferInit: params && params.deferInit ? params.deferInit : false,
             params: params,
             staticProps: {},
-            instance: PeaksPromisficationPlugin
+            instance: PeaksAsyncPlugin
         };
     }
 
