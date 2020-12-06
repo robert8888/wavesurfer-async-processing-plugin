@@ -1,7 +1,7 @@
 {
   "name": "wavesurfer.js-async",
   "version": "1.0.0",
-  "description": "WaveSurfer GetPeeks Async",
+  "description": "WaveSurfer computing peeks asynchronously",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
@@ -10,7 +10,8 @@
   "keywords": [
     "WaveSurffer",
     "Plugin",
-    "Promisfication"
+    "Promisfication",
+    "Asynchronously"
   ],
   "author": "robert.kami88@gmail.com",
   "license": "ISC",
