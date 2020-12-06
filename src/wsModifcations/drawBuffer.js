@@ -37,7 +37,7 @@ export default function drawBuffer() {
                     newRanges[i][0],
                     newRanges[i][1]
                 );
-                this.drawer.getPeaksAsync(
+                this.drawer.drawPeaks(
                     peaks,
                     width,
                     newRanges[i][0],
@@ -48,9 +48,9 @@ export default function drawBuffer() {
         })()
     } else {
         this.fireEvent("processing")
-        this.backend.getPeaksPromise(width, start, end).then(peaks => {
+        this.backend.getPeaksAsync(width, start, end).then(peaks => {
             this.fireEvent("processed");
-            this.drawer.getPeaksAsync(peaks, width, start, end);
+            this.drawer.drawPeaks(peaks, width, start, end);
             this.fireEvent('redraw', peaks, width);
         });
     }
