@@ -1,6 +1,6 @@
 {
   "name": "wavesurfer.js-async",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "WaveSurfer computing peeks asynchronously",
   "main": "dist/wavesurfer-async.js",
   "scripts": {
