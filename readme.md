@@ -1,3 +1,7 @@
+```
+npm i wavesurfer.js-async
+```
+
 ### Motivation
 This piece of code is a plugin for wavesurfer.js which prevent 
 blocking main browser thread during analyzing audio file. 
