@@ -32,12 +32,12 @@ export default function drawBuffer() {
             let i;
             let len = newRanges.length;
             for (i = 0; i < len; i++) {
-                peaks = await this.backend.getPeaksPromise(
+                peaks = await this.backend.getPeaksAsync(
                     width,
                     newRanges[i][0],
                     newRanges[i][1]
                 );
-                this.drawer.drawPeaks(
+                this.drawer.getPeaksAsync(
                     peaks,
                     width,
                     newRanges[i][0],
@@ -50,7 +50,7 @@ export default function drawBuffer() {
         this.fireEvent("processing")
         this.backend.getPeaksPromise(width, start, end).then(peaks => {
             this.fireEvent("processed");
-            this.drawer.drawPeaks(peaks, width, start, end);
+            this.drawer.getPeaksAsync(peaks, width, start, end);
             this.fireEvent('redraw', peaks, width);
         });
     }

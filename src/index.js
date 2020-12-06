@@ -1,5 +1,5 @@
 import drawBuffer from "./wsModifcations/drawBuffer";
-import getPeaksPromise from "./wsModifcations/getPeaks";
+import getPeaksAsync from "./wsModifcations/getPeaks";
 import loadDecodedBuffer from "./wsModifcations/loadDecodedBuffer";
 
 export default class PeaksPromisficationPlugin {
@@ -22,7 +22,7 @@ export default class PeaksPromisficationPlugin {
     constructor(params, ws) {
         ws.drawBuffer = drawBuffer;
 
-        ws.Backend.prototype.getPeaksPromise = getPeaksPromise;
+        ws.Backend.prototype.getPeaksAsync = getPeaksAsync;
 
         ws.loadDecodedBuffer = loadDecodedBuffer;
 

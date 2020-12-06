@@ -1,4 +1,4 @@
-export default async function getPeaksPromise(length, first, last) {
+export default async function getPeaksAsync(length, first, last) {
     const yieldIteration = this.params.yieldIteration || 16;
 
     if (this.peaks) {

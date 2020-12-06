@@ -1,5 +1,5 @@
 {
-  "name": "ws-promise",
+  "name": "wavesurfer.js-async",
   "version": "1.0.0",
   "description": "WaveSurfer GetPeeks Async",
   "main": "dist/index.js",
