@@ -1,7 +1,7 @@
 const path = require("path")
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -21,7 +21,7 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: ['@babel/preset-env'],
-                        plugins: ["@babel/plugin-proposal-class-properties", {lose: true}]
+                        plugins: [["@babel/plugin-proposal-class-properties", { "loose": true }]]
                     }
                 }
             }
